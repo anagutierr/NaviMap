@@ -1,0 +1,31 @@
+
+#pn{
+	 -fx-background-color: #1b3673;
+	 -fx-text-fill: white;
+	
+}
+
+
+
+.tableview{
+	-fx-background-color: #2b5579;
+	 -fx-text-fill: white;
+	
+}
+
+#b{
+	
+	-fx-background-color: #4C75A6;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box,grey,10,0,5,5);
+	
+}
+#b:hover {
+    -fx-background-color: #180f53;
+	
+}
+
+#b:pressed, #b:default:hover:pressed {
+  -fx-background-color: #180f53;
+  
+}

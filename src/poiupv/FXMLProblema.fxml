@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="vb" fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="1042.0" stylesheets="@estilos/cartaEstilos.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poiupv.ProblemaController">
+   <children>
+      <SplitPane id="vb" dividerPositions="0.357679180887372" prefHeight="542.0" prefWidth="1166.0">
+        <items>
+            <BorderPane prefHeight="338.0" prefWidth="473.0">
+               <bottom>
+                  <HBox prefHeight="78.0" prefWidth="474.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="bFinalizar" mnemonicParsing="false" onAction="#finalizar" prefHeight="26.0" prefWidth="65.0" text="Finalizar">
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="bVerificar" mnemonicParsing="false" onAction="#verificarSol" text="Verificar solución">
+                           <HBox.margin>
+                              <Insets left="70.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="bSiguiente" mnemonicParsing="false" onAction="#pasarSig" prefHeight="26.0" prefWidth="65.0" text="Siguiente">
+                           <HBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </HBox>
+               </bottom>
+               <center>
+                  <HBox prefHeight="160.0" prefWidth="458.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="160.0" prefWidth="379.0" style="-fx-background-color: white; -fx-border-color: #2b5579; -fx-border-width: 5;">
+                           <children>
+                              <Label fx:id="lEnunciado" prefHeight="194.0" prefWidth="378.0" wrapText="true">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets right="10.0" />
+                                 </padding></Label>
+                              <RadioButton fx:id="answer1" mnemonicParsing="false">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="answers" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton fx:id="answer2" mnemonicParsing="false" toggleGroup="$answers">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="answer3" mnemonicParsing="false" toggleGroup="$answers">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="answer4" mnemonicParsing="false" toggleGroup="$answers">
+                                 <VBox.margin>
+                                    <Insets left="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <HBox prefHeight="57.0" prefWidth="531.0">
+                                 <children>
+                                    <Label fx:id="mensajeIn" textAlignment="RIGHT" textFill="#e70d0d">
+                                       <HBox.margin>
+                                          <Insets left="200.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </center>
+               <top>
+                  <Pane id="pn" prefHeight="66.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="398.0">
+                           <children>
+                              <Label prefHeight="44.0" prefWidth="135.0" text="PROBLEMA" textFill="WHITE">
+                                 <font>
+                                    <Font name="Dubai Bold" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </top>
+            </BorderPane>
+            <BorderPane prefHeight="362.0" prefWidth="502.0">
+               <center>
+                  <SplitPane dividerPositions="0.8802588996763754" orientation="VERTICAL" prefHeight="456.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+                     <items>
+                        <ScrollPane fx:id="map_scrollpane" onMouseMoved="#muestraPosicion" prefHeight="288.0" prefWidth="501.0">
+                           <content>
+                              <Pane prefHeight="402.0" prefWidth="677.0">
+                                 <children>
+                                    <ImageView fx:id="imTransportador" fitHeight="146.0" fitWidth="146.0" focusTraversable="true" onMouseDragged="#guardarPosicionTransportador2" onMousePressed="#guardarPosicionTransportador" onMouseReleased="#guardarPosicionTransportador0" opacity="0.75" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/transportador.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="nodo" fitHeight="538.0" fitWidth="812.0" onMouseDragged="#guardarPosicion2" onMousePressed="#guardarPosicion" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/carta_nautica.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <MenuButton fx:id="map_pin" mnemonicParsing="false" prefHeight="60.0" prefWidth="48.0" text="MenuButton" visible="false">
+                                       <graphic>
+                                          <ImageView fx:id="transportador" fitHeight="150.0" fitWidth="200.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" visible="false" />
+                                       </graphic>
+                                    </MenuButton>
+                                    
+                                 </children>
+                              </Pane>
+                           </content>
+                        </ScrollPane>
+                        <HBox prefHeight="56.0" prefWidth="501.0" style="-fx-background-color: #cce3f2;" stylesheets="@estilos/botCarta.css">
+                           <children>
+                              <VBox prefHeight="44.0" prefWidth="118.0">
+                                 <children>
+                                    <ColorPicker fx:id="colorP" prefHeight="30.0" prefWidth="99.0">
+                                       <value>
+                                          <Color red="0.9368420839309692" green="0.03816764056682587" blue="0.03816764056682587" />
+                                       </value></ColorPicker>
+                                    <Slider fx:id="sliderGrosor" blockIncrement="1.0" max="10.0" min="1.0" minorTickCount="5">
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin></Slider>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="7.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <HBox prefHeight="46.0" prefWidth="382.0">
+                                 <children>
+                                    <ToggleButton fx:id="bTexto" mnemonicParsing="false" onAction="#escribirTexto" prefHeight="36.8" prefWidth="44.8" textFill="#70b8f7">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/texto.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="accionesMap" />
+                                       </toggleGroup>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="bArco" mnemonicParsing="false" onAction="#trazarArco" toggleGroup="$accionesMap">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/compaspng.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="bMarcarPunto" mnemonicParsing="false" onAction="#marcarPunto" toggleGroup="$accionesMap">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/marcarpunto.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="bRecta" mnemonicParsing="false" onAction="#trazarRecta" toggleGroup="$accionesMap">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/linearecta.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="bTransportador" mnemonicParsing="false" onAction="#mostrarTransportador">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/iconotransportador.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="bCoordenadas" mnemonicParsing="false" onAction="#coordenadasPunto" toggleGroup="$accionesMap">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/extermospunto2.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="bLimpiar" mnemonicParsing="false" onAction="#limpiarCarta" toggleGroup="$accionesMap">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/limpiarcarta.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </ToggleButton>
+                                    <ToggleButton id="help" fx:id="bAyuda" mnemonicParsing="false" onAction="#mostrarAyuda" style="-fx-background-color: #fad532;" textFill="#ffd21e" toggleGroup="$accionesMap">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/ayuda.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </ToggleButton>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="5.0" />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </items>
+                  </SplitPane>
+               </center>
+               <bottom>
+                  <Label fx:id="posicion" prefHeight="18.0" prefWidth="175.0" text="Scene x:            Scene y:" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <HBox prefHeight="66.0" prefWidth="502.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="52.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/navimap.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Region prefHeight="66.0" prefWidth="137.0">
+                           <HBox.margin>
+                              <Insets left="150.0" />
+                           </HBox.margin></Region>
+                        <Label text="Zoom">
+                           <HBox.margin>
+                              <Insets right="5.0" top="25.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#zoomOut" text="-">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin></Button>
+                        <Slider fx:id="zoom_slider">
+                           <HBox.margin>
+                              <Insets top="25.0" />
+                           </HBox.margin>
+                        </Slider>
+                        <Button mnemonicParsing="false" onAction="#zoomIn" text="+">
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin></Button>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

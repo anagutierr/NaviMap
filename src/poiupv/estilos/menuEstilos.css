@@ -1,0 +1,47 @@
+#vb{
+	-fx-background-color: #cce3f2;
+	
+}
+
+#paneMar{
+	-fx-background-image: url(./sea.gif/);
+}
+
+#label{
+	 -fx-background-color: #cce3f2;
+	
+}
+
+.menu-bar {
+    -fx-background-color: #cce3f2;
+	 -fx-text-fill: white;
+}
+
+.menu{
+	/*-fx-background-color: #f7c82d;*/
+	
+}
+
+/*.menu-item {
+    -fx-background-color: #cce3f2; 	    
+}*/
+
+.menu-item:hover {
+    -fx-background-color: #4C75A6; 
+}
+.button{
+	
+	-fx-background-color: #4C75A6;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box,grey,10,0,8,8);
+	
+}
+.button:hover {
+    -fx-background-color: #180f53;
+	
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #180f53;
+  
+}

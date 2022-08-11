@@ -1,0 +1,19 @@
+.toggle-button{
+	
+	-fx-background-color: #4C75A6;
+	-fx-border-color: #2b5579;
+	
+    -fx-border-width: 2;   
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box,grey,10,0,5,5);
+	
+}
+.toggle-button:hover {
+    -fx-background-color: #70b8f7;
+	
+}
+
+.toggle-button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #70b8f7;
+  
+}
