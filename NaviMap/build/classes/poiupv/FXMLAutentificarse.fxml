@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="429.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poiupv.FXMLAutentificarseController">
+   <children>
+      <Pane id="pane" prefHeight="446.0" prefWidth="358.0" stylesheets="@estilos/autentificarseEstilos.css">
+         <children>
+            <VBox prefHeight="446.0" prefWidth="358.0">
+               <children>
+                  <Pane prefHeight="59.0" prefWidth="358.0" />
+                  <Pane id="logo" prefHeight="105.0" prefWidth="358.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="193.0" layoutX="78.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/navimap.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="27.0" prefWidth="358.0" />
+                  <Pane id="cuadro" prefHeight="230.0" prefWidth="318.0">
+                     <children>
+                        <VBox prefHeight="219.0" prefWidth="318.0">
+                           <children>
+                              <Label style="-fx-text-fill: white;" text="Nombre de usuario" textFill="#1a1b1b">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="nombre_usuario" prefHeight="26.0" prefWidth="295.0" promptText="Nombre de usuario">
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <HBox prefHeight="30.0" prefWidth="295.0">
+                                 <children>
+                                    <Label style="-fx-text-fill: white;" text="Contraseña">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="20.0" top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="298.0">
+                                       <children>
+                                          <PasswordField fx:id="contraseña" prefHeight="26.0" prefWidth="233.0" promptText="contraseña">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </PasswordField>
+                                          <CheckBox fx:id="checkVer" mnemonicParsing="false" text="Ver" textFill="WHITE">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                          </CheckBox>
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="contraseñaVer" layoutX="21.0" prefHeight="26.0" prefWidth="233.0" />
+                                 </children>
+                              </Pane>
+                              <HBox prefHeight="42.0" prefWidth="322.0">
+                                 <children>
+                                    <Hyperlink fx:id="registro" onAction="#newpage" prefHeight="31.0" prefWidth="86.0" text="Registrarse" underline="true">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets bottom="5.0" left="20.0" top="20.0" />
+                                       </HBox.margin>
+                                    </Hyperlink>
+                                    <Text fx:id="error" fill="#ef2917" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="173.60005408525467">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" left="30.0" top="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <VBox prefHeight="77.0" prefWidth="358.0">
+                     <children>
+                        <Button fx:id="bIniciar" mnemonicParsing="false" onAction="#iniciarMenu" prefHeight="26.0" prefWidth="161.0" text="Iniciar sesión" textAlignment="CENTER" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="100.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

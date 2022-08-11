@@ -1,0 +1,66 @@
+#vb{
+	-fx-background-color: #cce3f2;
+	
+}
+
+#pn{
+	 -fx-background-color: #1b3673;
+	 -fx-text-fill: white;
+	
+}
+
+
+
+.titled-pane > .title 
+{
+-fx-background-color: linear-gradient(aliceblue, lightslategray);
+/*-fx-background-insets: 0, 1, 2;
+-fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+-fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+}
+
+
+.titled-pane
+{
+    -fx-background-color: linear-gradient(aliceblue, lightslategray);
+}
+
+.listview{
+	-fx-background-color: #4C75A6;
+	-fx-text-fill: white;
+	
+}
+.list-cell{
+    -fx-background-color: #4C75A6;
+    -fx-text-fill: white;
+}
+
+
+.list-cell:hover {
+    -fx-background-color: #180f53;
+    -fx-text-fill: white;
+}
+
+.list-cell:selected {
+    -fx-background-color: #180f53;
+    -fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+
+.button{
+	
+	-fx-background-color: #4C75A6;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box,grey,10,0,5,5);
+	
+}
+.button:hover {
+    -fx-background-color: #180f53;
+	
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #180f53;
+  
+}

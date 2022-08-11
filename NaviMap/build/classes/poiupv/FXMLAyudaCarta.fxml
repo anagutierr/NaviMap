@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="vb" prefHeight="751.0" prefWidth="600.0" stylesheets="@estilos/menuEstilos.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poiupv.AyudaCartaController">
+   <children>
+      <Label contentDisplay="CENTER" prefHeight="18.0" prefWidth="321.0" text="GUÍA DE AYUDA">
+         <font>
+            <Font name="Dubai Bold" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="40.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <GridPane gridLinesVisible="true" prefHeight="686.0" prefWidth="600.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="295.20001220703125" minWidth="10.0" prefWidth="189.5999755859375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="410.4000244140625" minWidth="10.0" prefWidth="410.4000244140625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="37.599996948242186" minHeight="10.0" prefHeight="12.000008010864256" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="84.79999198913575" minHeight="10.0" prefHeight="42.40000305175782" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="117.59998474121093" minHeight="10.0" prefHeight="60.99998779296874" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="101.00000610351563" minHeight="0.0" prefHeight="43.20000610351562" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="130.99999389648434" minHeight="0.0" prefHeight="55.19999999999996" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="156.39999999999998" minHeight="0.0" prefHeight="79.19996337890626" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="124.00001220703126" minHeight="10.0" prefHeight="57.79997558593749" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="105.00004882812499" minHeight="10.0" prefHeight="41.60000000000002" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.60000000000002" minHeight="10.0" prefHeight="54.39996948242185" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="91.20003051757817" minHeight="10.0" prefHeight="69.5999755859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="58.80002441406248" minHeight="10.0" prefHeight="58.80002441406248" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="FUNCIONALIDADES">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="CENTER" text="INSTRUCCIONES DE USO" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="110.0" />
+               </GridPane.margin>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../resources/texto.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="90.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../resources/compaspng.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="90.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../resources/marcarpunto.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="90.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../resources/linearecta.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="90.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../resources/iconotransportador.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="90.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../resources/extermospunto2.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="90.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="7">
+               <image>
+                  <Image url="@../resources/limpiarcarta.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="90.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Label prefHeight="18.0" prefWidth="150.0" text="Cambiar el color del trazo" GridPane.rowIndex="9" />
+            <Label text="Cambiar el grossor del trazo" GridPane.rowIndex="10" />
+            <Label text="Hacer zoom" GridPane.rowIndex="11" />
+            <Label text="Eliminar una marca concreta" GridPane.rowIndex="8" />
+            <Label prefHeight="56.0" prefWidth="288.0" text="Pulse este botón y luego clique sobre el punto de la carta donde quiera insertar el texto." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Escribir texto" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Dibujar un arco" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Pulse este botón y luego clique sobre el punto del mapa donde quiera dibujar un arco. Este punto será el  centro de la circunferencia, arrastre sin soltar el cursor hasta conseguir el radio deseado" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Dibujar un punto" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Pulse este botón y luego clique sobre el punto de la carta donde quiera dibujar un punto." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Dibujar una recta" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Pulse este botón y luego clique sobre un punto de la carta. Este será el punto incial de la recta, arrastre el cursor en la dirección que quiera que tenga la recta y hasta conseguir la longitud deseada." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Medir con el transportador" wrapText="true" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="20.0" right="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Pulse este botón para que aparezca o desaparezca el transportador. Con él puede medir ángulos arrastrándolo sobre la posición deseada. El transportador también se puede ocultar abriendo su menú contextual y clicando sobre &quot;Ocultar&quot;." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Marcar extremos de un punto" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="20.0" right="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Pulse este botón y clique sobre el lugar de la carta donde quiera que aparezcan  dos líneas ortogonales que pasan por dicho punto y cortan perpendicularmente los bordes la carta." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Limpiar carta" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets right="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Pulse este botón para borrar todos los elementos de la carta, el transposrtador se guardará inmediatamente." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Sitúese sobre la marca que quiera borrar y abra el menú contextual (click sobre el botón derecho del ratón). En este menú seleccione &quot;Eliminar&quot; y el elemento desaparecerá." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Antes de dibujar una marca, seleccione el color deseado usando el color picker. Si quiere cambiar el color de una marca ya dibujada, primero elija el nuevo color. Despueś, sitúese sobre esta y abra su menú contextual (click derecho del ratón) y seleccione la opción &quot;Cambiar color&quot;." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Antes de dibujar una marca, seleccione el grossor deseado utilizando el slider inferior izquierdo." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Label text="Utilice el slider superior derecho o los botones &quot;+&quot; y &quot;-&quot; para ampliar/deasmpliar la carta." wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="11">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+         </VBox.margin>
+      </GridPane>
+   </children>
+</VBox>

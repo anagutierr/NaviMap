@@ -1,0 +1,32 @@
+.button{
+	
+	-fx-background-color: #4C75A6;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box,grey,10,0,5,5);
+	
+}
+.button:hover {
+    -fx-background-color: #180f53;
+	
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #180f53;
+  
+}
+
+#vb{
+	-fx-background-color: #cce3f2;
+	
+}
+
+#pn{
+	 -fx-background-color: #1b3673;
+	 -fx-text-fill: white;
+	
+}
+
+#help:hover{
+	-fx-background-color: #ffd21e;
+}
+

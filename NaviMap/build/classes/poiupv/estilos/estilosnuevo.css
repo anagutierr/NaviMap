@@ -1,0 +1,50 @@
+#gridPane {
+-fx-background-color: #cce3f2;
+
+}
+#title {
+    -fx-fill: white;
+}
+#vBox {
+-fx-background-color: #1b3673;
+-fx-text-fill: white;
+}
+.button{
+	
+	-fx-background-color: #4C75A6;
+	-fx-text-fill: white;
+	-fx-effect: dropshadow(three-pass-box,grey,10,0,5,5);
+	
+}
+.button:hover {
+    -fx-background-color: #180f53;
+	
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #180f53;
+  
+}
+#foto {
+    -fx-background-color: #cce3f2;
+}
+.split-menu-button {
+    -fx-background-color: #cce3f2;
+}
+.arrow-button {
+    -fx-background-color: #cce3f2;
+}
+.custom {
+  -fx-control-inner-background: orange;
+}
+ .button{
+    -fx-background-color: #4C75A6;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box,grey,10,0,5,5);
+}
+#aviso .button:hover{
+    -fx-background-color: #180f53;
+}
+#aviso .button:pressed, .button:default:hover:pressed{
+    -fx-background-color: #180f53;
+}
